@@ -1,0 +1,518 @@
+body {
+    background: linear-gradient(to right, #608249, #7F8049);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+header {
+
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #526f3e, #7F8049);
+
+    /* pushes links to right */
+    align-items: center;
+    /* keeps everything in one line vertically */
+    padding: 10px 40px;
+
+    box-sizing: border-box;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between logo and heading */
+    color: white;
+}
+
+img {
+    margin-left: 30px;
+    width: 40px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.headerbutton {
+    margin-left: 5px;
+    width: 95px;
+    color: white;
+    height: 55px;
+    border-radius: 30px;
+    background-color: #7F8049;
+    border-color: white
+}
+
+/* hero section */
+.cards {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-left: 100px;
+}
+
+.cards-img img {
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+}
+
+.thelabu {
+    margin-left: 100px;
+    line-height: 0px;
+    margin-top: 50px;
+
+}
+
+.thelabup {
+    margin-left: 100px;
+    line-height: 0px;
+    color: rgb(184, 175, 175);
+}
+
+.cardcontent h3 {
+    margin-bottom: 0px;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 100px
+}
+
+.cardcontent h1 {
+    font-size: 60px;
+    margin-left: 100px;
+    margin-top: 15px;
+
+}
+
+.cardcontent p {
+    color: rgb(204, 195, 195);
+    margin-left: 100px;
+}
+
+.centerbutton {
+    color: white;
+    font-size: medium;
+    background-color: #f4511f;
+    border-color: none;
+    border-radius: 10px;
+    width: 140px;
+    height: 60px;
+    margin-left: 100px
+}
+
+.centerbutton:hover {
+    background-color: #de4415;
+}
+
+/* favourite cards */
+
+.favourite {
+    display: flex;
+    justify-content: center;
+    /* center all cards */
+    gap: 90px;
+    margin-top: 50px;
+}
+
+.favheading {
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    font-size: larger;
+
+}
+
+.ghost img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.ghost img:hover,
+.pumpkin img:hover,
+.witchhat img:hover {
+    transform: translateY(-8.9px);
+}
+
+.ghost h2 {
+    color: white;
+    margin-left: 35%;
+
+}
+
+.ghost p {
+    color: #dad8d7;
+    margin-left: 17%;
+}
+
+.indent {
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.pumpkin img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.4s ease-in-out;
+
+}
+
+.pumpkin h2 {
+    color: white;
+    margin-left: 28%;
+
+}
+
+.pumpkin p {
+    color: #dad8d7;
+    margin-left: 20%;
+}
+
+.indentpumpkin {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.witchhat img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.witchhat h2 {
+    color: white;
+    margin-left: 28%;
+
+}
+
+.witchhat p {
+    color: #dad8d7;
+    margin-left: 26%;
+}
+
+.indentwitchhat {
+    display: inline-block;
+    margin-left: 19px;
+}
+
+/* about card */
+.about {
+
+    display: flex;
+    margin-left: 15%;
+    gap: 90px;
+
+}
+
+.text {
+    max-width: 300px;
+    margin-top: 10%;
+}
+
+.text h1 {
+    color: white;
+    font-size: 2.2rem;
+    margin-left: 10px;
+}
+
+.text p {
+    color: #dad8d7;
+    font-size: 1rem;
+}
+
+/* animation for about image  */
+@keyframes moveupdown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+
+
+}
+
+.about img {
+    width: 350px;
+    height: 420px;
+    margin-left: 50%;
+    margin-top: 10%;
+    animation-name: moveupdown;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+.aboutbutton {
+    border-radius: 10px;
+    color: white;
+    background-color: #f4511f;
+    width: 40%;
+    height: 50px;
+    border: none;
+}
+
+.aboutbutton:hover {
+    background-color: #de4415;
+}
+
+/* trick or traet cards */
+.trickh2 {
+    color: white;
+    text-align: center;
+    font-size: 2.9rem;
+    margin-top: 15%;
+    margin-bottom: 10px;
+}
+
+.trickortreat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    /* controls spacing perfectly */
+    margin: 10% auto;
+    max-width: 690px;
+    padding: 10px;
+    color: white;
+}
+
+.toffe,
+.bone,
+.scarecrow,
+.candycane,
+.pumpkintrick,
+.ghosttrick {
+    border-radius: 20px;
+    background: linear-gradient(to right, #537140, #6C7141);
+    height: 240px;
+    width: 100%;
+    text-align: center;
+}
+
+.bone img,
+.scarecrow img,
+.toffe img,
+.pumpkintrick img,
+.ghosttrick img,
+.candycane img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.1s ease-in-out;
+
+}
+/* trick  or treat card animation  */
+.bone img:hover,
+.scarecrow img:hover,
+.toffe img:hover,
+.pumpkintrick img:hover,
+.ghosttrick img:hover,
+.candycane img:hover{
+    transform: translateY(-6.1px);
+}
+/* dicount card */
+.discount {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* controls spacing perfectly */
+    margin-left: 20%;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to right, #537140, #6C7141);
+    border-radius: 30px;
+}
+
+.discount img {
+    width: 400px;
+    height: 350px;
+}
+
+.discountcontent {
+    margin-top: 15%;
+    margin-left: 5%;
+    font-size: larger;
+
+}
+
+.discountbutton {
+    background-color: #f4511f;
+    width: 130px;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+}
+.discountbutton:hover{
+    background-color: #de4415;
+}
+
+/* new arrivals cards  */
+.arrivalh2 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 15%;
+    margin-bottom: 10px;
+}
+
+.newarrival {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* controls spacing perfectly */
+    margin: 10% auto;
+    max-width: 75%;
+    padding: 10px;
+    color: white;
+}
+
+.witchbroom,
+.hauntedhouse,
+.halloweencandle {
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(to right, #537140, #6C7141);
+    height: 340px;
+    width: 90%;
+    text-align: center;
+}
+
+.witchbroom img,
+.hauntedhouse img,
+.halloweencandle img {
+    width: 200px;
+    height: 180px;
+}
+
+/* our news letter  */
+.newsletterh3 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 15%;
+    margin-bottom: 10px;
+}
+
+.ournewsletter p {
+    color: #dad8d7;
+    text-align: center;
+    margin-top: 6%;
+
+}
+
+.enteremail {
+
+    margin-left: 33%;
+    color: #dad8d7;
+    background: linear-gradient(to right, #537140, #6C7141);
+
+    border-radius: 20px;
+    max-width: 35%;
+    height: 98px;
+
+}
+
+.enteremail input {
+    color: #ebe8e8;
+    background: #547341;
+    border: none;
+    margin-left: 30px;
+    margin-top: 45px;
+    font-size: 1rem;
+}
+
+.enteremail button {
+    color: rgb(255, 255, 255);
+    background-color: #f4511f;
+    border-radius: 8px;
+    border-color: none;
+    width: 120px;
+    height: 60px;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+.enteremail button:hover{
+    background-color: #de4415;
+}
+
+/* footer */
+footer {
+    position: relative;
+}
+
+.footers {
+     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 50px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.foot-img {
+    height: 20px;
+    width: 20px;
+}
+
+.foot1 {
+    width: 180px;
+    height: 200px;
+}
+
+.foot1 h4 {
+    font-weight: bold;
+}
+
+.foot1 p {
+    color: #dad8d7;
+}
+
+.foot-end {
+    color: #dad8d7;
+    display: flex;
+    justify-content: center;
+}
+
+.footerimg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transition: transform 0.1s ease-in-out;
+}
+
+.footer-imgleft {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 190px;
+
+}
+
+.footer-imgright {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 190px;
+}
+.footer-imgleft:hover,.footer-imgright:hover{
+     transform: translateY(-6.6%);
+}
