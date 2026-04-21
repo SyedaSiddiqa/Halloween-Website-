@@ -6,20 +6,16 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 }
-
 header {
-
     position: sticky;
     top: 0px;
     display: flex;
     justify-content: space-between;
     background: linear-gradient(to right, #526f3e, #7F8049);
-
     /* pushes links to right */
     align-items: center;
     /* keeps everything in one line vertically */
     padding: 10px 40px;
-
     box-sizing: border-box;
 }
 
@@ -51,7 +47,6 @@ nav a {
     background-color: #7F8049;
     border-color: white
 }
-
 /* hero section */
 .cards {
     color: white;
@@ -108,7 +103,7 @@ nav a {
     border-radius: 10px;
     width: 140px;
     height: 60px;
-    margin-left: 100px
+    margin-left: 100px;
 }
 
 .centerbutton:hover {
@@ -515,4 +510,245 @@ footer {
 }
 .footer-imgleft:hover,.footer-imgright:hover{
      transform: translateY(-6.6%);
+}
+/* =====================
+   RESPONSIVE STYLES
+   ===================== */
+
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    .headerbutton {
+        margin-left: 0;
+    }
+
+    .cards {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .cards-img img {
+        width: 260px;
+        height: 260px;
+        margin-left: 0;
+    }
+
+    .thelabu,
+    .thelabup {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .cardcontent h3,
+    .cardcontent h1,
+    .cardcontent p,
+    .centerbutton {
+        margin-left: 0;
+    }
+
+    .cardcontent h1 {
+        font-size: 36px;
+    }
+
+    .centerbutton {
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    .favheading {
+        margin-top: 60px;
+    }
+
+    .favourite {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .ghost h2,
+    .pumpkin h2,
+    .witchhat h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .ghost p,
+    .pumpkin p,
+    .witchhat p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about {
+        margin-left: 5%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .text {
+        max-width: 90%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .aboutbutton {
+        width: 60%;
+    }
+
+    .about img {
+        width: 260px;
+        height: 300px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .trickortreat {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        gap: 20px;
+    }
+
+    .discount {
+        margin-left: 5%;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .discount img {
+        width: 260px;
+        height: 220px;
+    }
+
+    .discountcontent {
+        margin-top: 5%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .newarrival {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+    }
+
+    .witchbroom,
+    .hauntedhouse,
+    .halloweencandle {
+        width: 100%;
+    }
+
+    .enteremail {
+        margin-left: 5%;
+        max-width: 90%;
+        height: auto;
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .enteremail input {
+        margin-left: 0;
+        margin-top: 0;
+        width: 90%;
+    }
+
+    .enteremail button {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .footers {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .foot1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .footerimg {
+        display: none;
+    }
+}
+
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+    .cards-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cardcontent h1 {
+        font-size: 28px;
+    }
+
+    .trickh2,
+    .arrivalh2,
+    .newsletterh3 {
+        font-size: 1.8rem;
+    }
+
+    .trickortreat {
+        grid-template-columns: 1fr;
+        max-width: 80%;
+    }
+
+    .newarrival {
+        grid-template-columns: 1fr;
+        max-width: 80%;
+    }
+
+    .ghost img,
+    .pumpkin img,
+    .witchhat img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .discount img {
+        width: 200px;
+        height: 170px;
+    }
+
+    .about img {
+        width: 200px;
+        height: 230px;
+    }
+
+    .favheading {
+        margin-top: 40px;
+    }
 }
